@@ -3,4 +3,4 @@
 eval "$(docker-machine env default)"
 cd ./hub
 docker-compose stop
-docker-compose rm -y
+docker-compose rm -f

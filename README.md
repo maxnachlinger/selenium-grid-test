@@ -28,5 +28,12 @@ cd ./selenium-grid/
 # edit start.sh to scale up more workers etc
 ```
 
+### Run the test client app
+```shell
+cd ./selenium-grid/testClientApp
+npm i
+node index.js
+```
+
 ### PS: More Docker commands
 See also: the [docker-cheat-sheet](https://github.com/wsargent/docker-cheat-sheet)
