@@ -1,6 +1,6 @@
 FROM selenium/base
 
-ENV FIREFOX_MINOR 34.0.5
+ENV FIREFOX_MINOR 39.0
 
 RUN apt-get update -qqy \
 && apt-get -qqy --no-install-recommends install \
