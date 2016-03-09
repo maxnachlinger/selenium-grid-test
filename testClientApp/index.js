@@ -38,5 +38,5 @@ function takeScreenshot (driver, name) {
   console.log('takeScreenshot', filename)
 
   return driver.takeScreenshot()
-    .then(image => promisify(fs.writeFile)(filename, image, 'base64')
+    .then(image => promisify(fs.writeFile)(filename, image, 'base64'))
 }
