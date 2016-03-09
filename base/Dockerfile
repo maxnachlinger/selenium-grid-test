@@ -1,6 +1,6 @@
 FROM ubuntu
  
-ENV VERSION 2.44.0
+ENV VERSION 2.52.0
  
 RUN apt-get update -qqy \
   && apt-get -qqy --no-install-recommends install \
