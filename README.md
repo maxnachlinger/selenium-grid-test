@@ -35,5 +35,29 @@ npm i
 node index.js
 ```
 
-### PS: More Docker commands
+###  More Docker commands
+```shell
+# start up the VM and setup your terminal
+docker-machine start default && \
+eval "$(docker-machine env default)"
+
+# remove an image
+docker rmi <image-id-or-name>
+
+# remove all stopped containers
+docker rm `docker ps -aq`
+
+# remove garbage images so you can save your hard-drive space for cat videos
+docker rmi `docker images -q --filter "dangling=true"`
+
+# show running containers
+docker ps -a
+
+# show images
+docker images
+
+# remove a container
+docker rm <container-id>
+```
+
 See also: the [docker-cheat-sheet](https://github.com/wsargent/docker-cheat-sheet)
