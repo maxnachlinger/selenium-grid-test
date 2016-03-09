@@ -12,6 +12,7 @@ default
 ```
 
 ### Setting up the grid
+```shell
 # cd to the selenium-grid dir and build the docker images
 cd ./selenium-grid/
 ./build-images.sh
