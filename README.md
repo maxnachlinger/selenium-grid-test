@@ -1,3 +1,5 @@
+This repo contains only a little original content, most of it is from this [awesome blog post](http://www.conductor.com/nightlight/running-selenium-grid-using-docker-compose/) :)
+
 ### Docker Installation (Mac)
 Install Docker Toolbox: https://www.docker.com/docker-toolbox
 
