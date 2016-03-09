@@ -3,6 +3,11 @@
 # Setup the machine environment in your current terminal
 eval "$(docker-machine env default)"
 
+# remove existing images
+docker rmi selenium/firefox
+docker rmi selenium/hub
+docker rmi selenium/base
+
 # cd to the selenium-grid/base dir and build the base image
 cd ./base
 
