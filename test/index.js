@@ -6,12 +6,20 @@ const By = webdriver.By
 const until = webdriver.until
 const promisify = require('./util/promisify')
 
-// probably 192.168.99.100 on Mac, and 127.0.0.1 on Unix-like systems
-const dockerHostIp = '192.168.99.100'
+const argv = require('yargs')
+  .options({
+    h: {
+      alias: 'hub',
+      demand: true,
+      describe: 'The IP address where the Selenium Hub runs, probably 192.168.99.100 on Mac, and 127.0.0.1 on Unix-like systems',
+      type: 'string'
+    }
+  }).argv;
+
 
 const driver = new webdriver.Builder()
   .forBrowser('firefox')
-  .usingServer(`http://${dockerHostIp}:4444/wd/hub`)
+  .usingServer(`http://${argv.hub}:4444/wd/hub`)
   .build()
 
 loadGoogle(driver)

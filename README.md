@@ -22,17 +22,13 @@ cd ./selenium-grid/
 # start up the grid
 ./start.sh
 
+# run the test client app
+./test.sh
+
 # stop the grid
-./sotp.sh
+./stop.sh
 
 # edit start.sh to scale up more workers etc
-```
-
-### Run the test client app
-```shell
-cd ./selenium-grid/testClientApp
-npm i
-node index.js
 ```
 
 ###  More Docker commands

@@ -5,6 +5,7 @@
   "main": "example.js",
   "author": "Max Nachlinger",
   "dependencies": {
-    "selenium-webdriver": "^2.52.0"
+    "selenium-webdriver": "^2.52.0",
+    "yargs": "^4.2.0"
   }
 }
